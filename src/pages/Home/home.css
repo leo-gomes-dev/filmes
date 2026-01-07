@@ -1,0 +1,99 @@
+/* --- CONFIGURAÇÃO DA HOME (TEMA DARK COERENTE) --- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: #141414; /* Fundo da página (Netflix Black) */
+  min-height: 100vh;
+}
+
+.lista-filmes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* CORRIGIDO: Card agora é escuro e coerente */
+.lista-filmes article {
+  width: 100%;
+  background-color: #181818; /* Cinza escuro para o card não ser branco */
+  padding: 20px;
+  border-radius: 8px;
+  /* Substituí o shadow por uma borda sutil, mais comum em temas dark */
+  border: 1px solid #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CORRIGIDO: Cor do título para branco */
+.lista-filmes strong {
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+  color: #ffffff; /* Texto branco para leitura no fundo escuro */
+  font-weight: bold;
+}
+
+.lista-filmes img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.lista-filmes p {
+  color: #d3d3d3; /* Texto cinza claro para melhor leitura */
+  text-align: justify;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+/* CORRIGIDO: Botão no estilo Netflix (Vermelho) */
+.lista-filmes a {
+  text-decoration: none;
+  background-color: #e50914; /* Vermelho Netflix */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: filter 0.2s;
+}
+
+.lista-filmes a:hover {
+  filter: brightness(0.8);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e50914;
+}
+
+/* --- Ajuste Desktop --- */
+@media (min-width: 768px) {
+  .lista-filmes article {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .lista-filmes img {
+    max-height: 650px;
+    width: 100%;
+  }
+
+  .lista-filmes strong {
+    font-size: 2em;
+  }
+}

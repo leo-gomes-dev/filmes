@@ -1,0 +1,126 @@
+/* --- Modern CSS Reset - 2026 Standard (Sua Base) --- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #141414; /* Fundo Netflix */
+  color: #ffffff; /* Cor da letra padrão */
+  overflow-x: hidden; /* Bloqueia scroll lateral */
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Layout Home Estilo Netflix --- */
+
+.app {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141414;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.lista-filmes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px; /* Mantém a largura que você solicitou */
+}
+
+.lista-filmes article {
+  width: 100%;
+  background-color: #181818; /* Cor do fundo do card */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #2f2f2f; /* Borda sutil */
+}
+
+/* Alteração: Cor do Title */
+.lista-filmes strong {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.6em;
+  display: block;
+  color: #e50914; /* Título em Vermelho Netflix */
+  font-weight: bold;
+}
+
+.lista-filmes img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Imagem aparece inteira */
+  border-radius: 4px;
+}
+
+/* Alteração: Estilo do Botão */
+.lista-filmes a {
+  background-color: #e50914;
+  color: #fff;
+  width: 100%;
+  max-width: 300px; /* Botão centralizado com largura controlada */
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.lista-filmes a:hover {
+  opacity: 0.8;
+}
+
+/* --- Responsividade Desktop --- */
+@media (min-width: 768px) {
+  .lista-filmes article {
+    max-width: 700px; /* Card um pouco mais largo no desktop */
+    margin: 0 auto;
+  }
+
+  .lista-filmes strong {
+    font-size: 2.2em;
+  }
+}

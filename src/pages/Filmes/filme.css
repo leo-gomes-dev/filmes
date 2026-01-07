@@ -1,0 +1,120 @@
+/* --- PAGINA DE DETALHES --- */
+
+.filme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #141414;
+  min-height: 100vh;
+}
+
+.area-voltar {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #e50914;
+  border-color: #e50914;
+}
+
+.filme h1 {
+  width: 100%;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.filme img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filme h3 {
+  align-self: flex-start;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.filme span {
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.filme strong {
+  align-self: flex-start;
+  color: #46d369;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* --- ÁREA DE BOTÕES DE AÇÃO --- */
+
+.btn-acao {
+  display: flex;
+  width: 100%;
+  gap: 15px; /* Espaço entre os botões */
+  margin-top: 10px;
+}
+
+.btn-acao button,
+.btn-acao a {
+  flex: 1; /* Faz os botões terem o mesmo tamanho */
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+/* Botão Salvar - Estilo Primário Branco (Netflix Style) */
+.btn-salvar {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.btn-salvar:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botão Trailer - Estilo Secundário Cinza */
+.btn-trailer {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
+}
+
+.btn-trailer:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+/* Ajuste Desktop */
+@media (min-width: 768px) {
+  .btn-acao {
+    width: 400px; /* No desktop os botões não precisam ser gigantes */
+    align-self: flex-start;
+  }
+}
