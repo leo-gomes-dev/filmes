@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# 🎬 PrimeFlix - Catálogo de Filmes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](img.shields.io)](https://prime.leogomesdev.com)
+[![GitHub](img.shields.io)](github.com)
 
-Currently, two official plugins are available:
+O **PrimeFlix** é uma plataforma de catálogo de filmes que consome a API do TMDB, desenvolvida com uma interface inspirada na Netflix. O projeto oferece uma experiência fluida para descoberta de filmes, visualização de detalhes, trailers e gerenciamento de uma lista personalizada de favoritos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home Fluida:** Listagem de filmes em cartaz com layout responsivo (1 coluna mobile / 2 colunas desktop).
+- **Detalhes Completos:** Informações detalhadas sobre sinopse, avaliação (Match %) e integração com trailers no YouTube.
+- **Minha Lista:** Sistema de favoritos utilizando `LocalStorage` para persistência de dados.
+- **Interface Dark Mode:** Design moderno focado em acessibilidade e estética de streaming.
+- **Notificações em Tempo Real:** Feedback visual ao salvar ou excluir filmes utilizando React-Toastify.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19 / Vite** - Framework e Bundler ultra-rápido.
+- **TypeScript** - Tipagem estática para maior segurança e produtividade.
+- **React Router Dom 7** - Navegação SPA (Single Page Application).
+- **Axios** - Consumo de API REST.
+- **React-Toastify** - Notificações inteligentes.
+- **CSS3 Moderno** - Flexbox, Grid e Variáveis CSS para tema Dark.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 🎬 Primeflix - Netflix Style App
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O **Primeflix** é uma plataforma de catálogo de filmes moderna que consome a API do The Movie Database (TMDB). 
+O projeto foi desenvolvido com foco em uma experiência de usuário fluida, design responsivo e uma interface inspirada na estética "Dark" da Netflix.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔗 Links Úteis
+- **🚀 Projeto Online:** [prime.leogomesdev.com](https://prime.leogomesdev.com)
+- **💻 Meu Portfólio:** [leogomesdev.com](https://leogomesdev.com)
+- **🎬 API Utilizada:** [The Movie Database (TMDB)](www.themoviedb.org)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📱 Preview da Interface
+
+
+
+## 📦 Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone github.com.git
