@@ -24,11 +24,6 @@ O **PrimeFlix** é uma plataforma de catálogo de filmes que consome a API do TM
 - **React-Toastify** - Notificações inteligentes.
 - **CSS3 Moderno** - Flexbox, Grid e Variáveis CSS para tema Dark.
 
-# 🎬 Primeflix - Netflix Style App
-
-O **Primeflix** é uma plataforma de catálogo de filmes moderna que consome a API do The Movie Database (TMDB). 
-O projeto foi desenvolvido com foco em uma experiência de usuário fluida, design responsivo e uma interface inspirada na estética "Dark" da Netflix.
-
 ---
 
 ## 🔗 Links Úteis
