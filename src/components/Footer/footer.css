@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   gap: 10px;
   color: #b3b3b3; /* Cinza clássico da Netflix para textos secundários */
   font-size: 0.9rem;
@@ -32,10 +33,53 @@
   font-size: 0.8rem;
   opacity: 0.6;
 }
+.ask-coffee {
+  text-decoration: none;
+  background-color: #009ee3; /* Azul Mercado Pago */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 20%;
+  margin: 20px auto;
+  gap: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.ask-coffee span {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.text-apoio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.text-apoio h3 {
+  margin: 5px 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.ask-coffee:hover {
+  transform: translateY(-2px);
+}
 
 /* Ajuste para telas menores */
 @media (max-width: 480px) {
   .footer {
     padding: 30px 15px;
+  }
+  .ask-coffee {
+    min-width: 50%;
   }
 }
