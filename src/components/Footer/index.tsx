@@ -7,7 +7,11 @@ function Footer() {
         <h3>☕ Gostou do projeto?</h3>
         <p>Se este trabalho te ajudou, considere me pagar um café!</p>
       </div>
-      <a href="https://mpago.la/1kz2Yay" target="_blank" className="ask-coffee">
+      <a
+        href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=444f1eb39bc44922871a3d10b7350c81"
+        target="_blank"
+        className="ask-coffee"
+      >
         <span>☕</span>
         Me paga um café?
       </a>
