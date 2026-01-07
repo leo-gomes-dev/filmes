@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Filmes from "./pages/Filmes";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
+import Favoritos from "./pages/Favoritos";
 
 function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/filme/:id" element={<Filmes />} />
+        <Route path="/favoritos" element={<Favoritos />} />
 
         {/* Rota NotFound*/}
         <Route path="*" element={<NotFound />} />
