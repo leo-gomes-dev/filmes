@@ -26,18 +26,14 @@ O **PrimeFlix** é uma plataforma de catálogo de filmes que consome a API do TM
 
 ---
 
+## 📱 Preview da Interface
+
 ## 🔗 Links Úteis
 - **🚀 Projeto Online:** [prime.leogomesdev.com](https://prime.leogomesdev.com)
 - **💻 Meu Portfólio:** [leogomesdev.com](https://leogomesdev.com)
 - **🎬 API Utilizada:** [The Movie Database (TMDB)](www.themoviedb.org)
 
 ---
-
-## 📱 Preview da Interface
-
-
-
-## 📦 Como rodar o projeto localmente
 
 1. Clone o repositório:
    ```bash
