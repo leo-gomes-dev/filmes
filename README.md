@@ -37,5 +37,5 @@ O **PrimeFlix** é uma plataforma de catálogo de filmes que consome a API do TM
 
 1. Clone o repositório:
    ```bash
-   git clone github.com.git/leo-gomes-dev/filmes
+   [git clone](https://github.com/leo-gomes-dev/filmes.git)
 
