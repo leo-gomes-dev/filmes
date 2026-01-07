@@ -58,7 +58,9 @@
   color: #fff;
   margin-top: 0; /* Reseta o margin do span geral */
 }
-
+.meus-favoritos h1 {
+  text-align: center;
+}
 /* Área de botões dentro da lista */
 .btn-favoritos {
   display: flex;
